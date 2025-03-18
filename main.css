@@ -12,6 +12,10 @@ header{
     padding: 1rem 0;
 }
 
+nav{
+    margin-top: 20px;
+}
+
 nav a{
     color: #F5F5DC;
     text-decoration: none;
@@ -46,12 +50,82 @@ main{
 }
 
 .produto img{
-    max-width: 100%;
+    max-width: 30%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
+    margin-top: 15px;
+}
+
+.preco{
+    font-weight: bold;
+    color: #E53935;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.botao{
+    background-color: #5D4037;
+    border: none;
+    color: #F5F5DC;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.botao:hover{
+    background-color: #795548;
+}
+
+#pedido{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+#listaPedido{
+ list-style: none;
+ padding: 0;
+}
+
+#pedido-button{
+    background-color: #5D4037;
+    color: #F5F5DC;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+#contato{
+    text-align: center;
+}
+
+.redeSociais{
+    display: inline-block;
+    background-color: #5D4037;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    background-color: #00796B;
+    color: #fff;
+    padding: 1rem 0;
 }
 
 @media (min-width: 768px){
-    
+    main{
+        width: 60%;
+    }
+    .categoria{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, miman(250px, 1fr));
+        gap: 1rem;
+    }
 }
