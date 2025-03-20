@@ -53,5 +53,5 @@ botaoFinalizarPedido.addEventListener("click", () => {
 
     total = 0;
 
-    totalElemento.textContent =  ${Total: R${total.toFixed(2)}}``
+    totalElemento.textContent =  `Total: R${total.toFixed}`;
 })
